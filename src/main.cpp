@@ -1,18 +1,24 @@
 #include <Arduino.h>
+#include "uart.h"
+#include "sensor.h"
 
-// put function declarations here:
-
+#define BAUD_RATE 115200
+#define SAMPLE_INTERVAL_MS 1000
 
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(115200);
-  Serial.println("ESP32 is alive!");
+    uart_init(BAUD_RATE);
+    sensor_init();
+    uart_send("System initialized");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-    Serial.println("Running...");
-    delay(1000);
+    SensorData data = sensor_read();
+    
+    if (data.valid) {
+        uart_send_json(data.temperature, data.humidity, data.light);
+    } else {
+        uart_send("ERROR: Invalid sensor reading");
+    }
+    
+    delay(SAMPLE_INTERVAL_MS);
 }
-
-// put function definitions here:
