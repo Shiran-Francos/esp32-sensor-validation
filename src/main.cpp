@@ -3,7 +3,7 @@
 #include "sensor.h"
 
 #define BAUD_RATE 115200
-#define SAMPLE_INTERVAL_MS 1000
+#define SAMPLE_INTERVAL_MS 1000 //sensoe reads every 1000ms=1s
 
 void setup() {
     uart_init(BAUD_RATE);

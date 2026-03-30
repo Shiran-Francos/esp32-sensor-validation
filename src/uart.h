@@ -3,6 +3,9 @@
 
 #include <Arduino.h>
 
+//header file of the uart- functions declarations
+
+
 // Initialize UART communication
 void uart_init(int baud_rate);
 

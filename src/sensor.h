@@ -5,10 +5,10 @@
 
 // Sensor data structure
 struct SensorData {
-    float temperature;
-    float humidity;
-    float light;
-    bool valid;
+    float temperature; //celsius
+    float humidity; //percentage
+    float light; //adc value 0-4095
+    bool valid; //the reading was successful
 };
 
 // Initialize sensors

@@ -5,6 +5,7 @@ void uart_init(int baud_rate) {
     Serial.println("UART initialized");
 }
 
+//sending a string therough uart
 void uart_send(const char* message) {
     Serial.println(message);
 }

@@ -2,8 +2,9 @@
 
 // Pin definitions
 #define DHT_PIN 21
-#define LDR_PIN 34
+#define LDR_PIN 34 //input pin
 
+//declare the input pin
 void sensor_init() {
     pinMode(LDR_PIN, INPUT);
     Serial.println("Sensors initialized");
