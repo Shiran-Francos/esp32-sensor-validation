@@ -23,4 +23,4 @@ def test_uart_format():
     try:
         validate(instance=data, schema=schema)
     except ValidationError as e:
-       assert False, f"Json format wrong": {e.message}  #the e.massege return the exact error 
+       assert False, f"Json format wrong: {e.message}"  #the e.massege return the exact error 
