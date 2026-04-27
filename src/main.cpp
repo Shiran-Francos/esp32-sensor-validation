@@ -3,7 +3,7 @@
 #include "sensor.h"
 
 #define BAUD_RATE 115200
-#define SAMPLE_INTERVAL_MS 1000 //sensoe reads every 1000ms=1s
+#define SAMPLE_INTERVAL_MS 1000 //sensor reads every 1000ms=1s
 
 void setup() {
     uart_init(BAUD_RATE);
@@ -13,12 +13,16 @@ void setup() {
 
 void loop() {
     SensorData data = sensor_read();
-    
+
     if (data.valid) {
         uart_send_json(data.temperature, data.humidity, data.light);
-    } else {
-        uart_send("ERROR: Invalid sensor reading");
+    } 
+    else {
+        char error_msg[50];
+        snprintf(error_msg, sizeof(error_msg), 
+            "ERROR: %s", sensor_get_error_str(data.error));
+        uart_send(error_msg);
     }
-    
+
     delay(SAMPLE_INTERVAL_MS);
 }
