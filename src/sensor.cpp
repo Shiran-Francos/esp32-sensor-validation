@@ -1,42 +1,46 @@
 #include "sensor.h"
+#include <DHT.h>
 
-// Pin definitions
 #define DHT_PIN 21
-#define LDR_PIN 34 //input pin
+#define DHT_TYPE DHT22
+#define LDR_PIN 34
 
-// Range definitions
 #define TEMP_MIN -40.0
 #define TEMP_MAX 80.0
 #define HUMIDITY_MIN 0.0
 #define HUMIDITY_MAX 100.0
-static bool initialized = false;
 
-//declare the input pin
+static bool initialized = false;
+static DHT dht(DHT_PIN, DHT_TYPE);
+
 void sensor_init() {
     pinMode(LDR_PIN, INPUT);
-    initialized = true; //set init to true
+    dht.begin();
+    initialized = true;
     Serial.println("Sensors initialized");
 }
 
 SensorData sensor_read() {
     SensorData data;
-    
-    // For now these are stubs - real sensor reading comes when hardware arrives
+    data.valid = false;
     data.temperature = 0.0;
     data.humidity = 0.0;
     data.light = 0.0;
-    data.valid = false;
-    if (!initialized) {   //error: init before read
+
+    if (!initialized) {
         data.error = SENSOR_ERROR_NOT_INITIALIZED;
+        return data;
     }
 
-    //UNTIL ESP ARRIVES!!!!
+    data.temperature = dht.readTemperature();
+    data.humidity = dht.readHumidity();
+    data.light = analogRead(LDR_PIN);
 
-    data.temperature = 25.0;
-    data.humidity = 60.0;
-    data.light = 512.0;
+    if (isnan(data.temperature) || isnan(data.humidity)) {
+        data.error = SENSOR_ERROR_TIMEOUT;
+        return data;
+    }
 
-    //error: out of range
     if (data.temperature < TEMP_MIN || data.temperature > TEMP_MAX) {
         data.error = SENSOR_ERROR_OUT_OF_RANGE;
         return data;
@@ -49,7 +53,6 @@ SensorData sensor_read() {
 
     data.valid = true;
     data.error = SENSOR_OK;
-    
     return data;
 }
 
