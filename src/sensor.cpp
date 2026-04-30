@@ -34,7 +34,7 @@ SensorData sensor_read() {
 
     data.temperature = dht.readTemperature();
     data.humidity = dht.readHumidity();
-    data.light = analogRead(LDR_PIN);
+    data.light = 0.0;  // LDR not connected yet
 
     if (isnan(data.temperature) || isnan(data.humidity)) {
         data.error = SENSOR_ERROR_TIMEOUT;
