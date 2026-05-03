@@ -1,0 +1,2 @@
+timestamp,temperature,humidity,light,status,error
+2026-05-03 12:02:40,N/A,N/A,N/A,FAIL,CORRUPTED_DATA

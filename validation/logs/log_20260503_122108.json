@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2026-05-03 12:21:08",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:21:08",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:21:08",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:21:08",
+    "temperature": 26.7,
+    "humidity": 68.9,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:10",
+    "temperature": 26.6,
+    "humidity": 67.6,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:12",
+    "temperature": 26.6,
+    "humidity": 69.0,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:14",
+    "temperature": 26.6,
+    "humidity": 69.1,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:16",
+    "temperature": 26.6,
+    "humidity": 69.1,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:18",
+    "temperature": 26.6,
+    "humidity": 69.2,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:20",
+    "temperature": 26.6,
+    "humidity": 69.2,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:22",
+    "temperature": 26.6,
+    "humidity": 69.3,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  },
+  {
+    "timestamp": "2026-05-03 12:21:24",
+    "temperature": 26.6,
+    "humidity": 69.3,
+    "light": 0.0,
+    "status": "PASS",
+    "error": ""
+  }
+]

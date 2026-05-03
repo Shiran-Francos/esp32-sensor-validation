@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-05-03 12:02:40",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  }
+]

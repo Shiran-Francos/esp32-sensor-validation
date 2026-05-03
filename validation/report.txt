@@ -1,0 +1,25 @@
+==================================================
+       ESP32 SENSOR VALIDATION REPORT
+==================================================
+Date:        2026-05-03 12:21:24
+Total Tests: 12
+Passed:      9
+Failed:      3
+Pass Rate:   75.0%
+==================================================
+
+DETAILED RESULTS:
+--------------------------------------------------
+[✗] 2026-05-03 12:21:08 | Temp: N/A°C | Humidity: N/A% | Light: N/A | Status: FAIL | Error: CORRUPTED_DATA
+[✗] 2026-05-03 12:21:08 | Temp: N/A°C | Humidity: N/A% | Light: N/A | Status: FAIL | Error: CORRUPTED_DATA
+[✗] 2026-05-03 12:21:08 | Temp: N/A°C | Humidity: N/A% | Light: N/A | Status: FAIL | Error: CORRUPTED_DATA
+[✓] 2026-05-03 12:21:08 | Temp: 26.7°C | Humidity: 68.9% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:10 | Temp: 26.6°C | Humidity: 67.6% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:12 | Temp: 26.6°C | Humidity: 69.0% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:14 | Temp: 26.6°C | Humidity: 69.1% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:16 | Temp: 26.6°C | Humidity: 69.1% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:18 | Temp: 26.6°C | Humidity: 69.2% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:20 | Temp: 26.6°C | Humidity: 69.2% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:22 | Temp: 26.6°C | Humidity: 69.3% | Light: 0.0 | Status: PASS
+[✓] 2026-05-03 12:21:24 | Temp: 26.6°C | Humidity: 69.3% | Light: 0.0 | Status: PASS
+==================================================

@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-05-03 12:05:09",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:09",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:09",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:09",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:10",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:11",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:12",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:13",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:14",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:15",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:16",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:17",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:18",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:19",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  },
+  {
+    "timestamp": "2026-05-03 12:05:20",
+    "temperature": "N/A",
+    "humidity": "N/A",
+    "light": "N/A",
+    "status": "FAIL",
+    "error": "CORRUPTED_DATA"
+  }
+]
