@@ -44,3 +44,26 @@ class MockESP32:
         for i in range(count):
             yield self.generate_normal_reading()
             time.sleep(interval)
+
+    def generate_empty_reading(self): 
+        data={}
+        return json.dumps(data)        
+
+    def generate_missing_key(self):
+        data = { 
+            "humidity": round(random.uniform(40.0, 70.0), 2),
+            "light": round(random.uniform(100.0, 900.0), 2)
+        }
+        return json.dumps(data)
+
+    def generate_none_reading(self):
+        return None
+
+    def generate_string_key(self):
+        data = {
+            "temp": "10",
+            "humidity": round(random.uniform(40.0, 70.0), 2),
+            "light": round(random.uniform(100.0, 900.0), 2)
+        }        
+
+        return json.dumps(data)
