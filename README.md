@@ -9,9 +9,9 @@ The project also includes a software-based ESP32 mock simulator used for develop
 ## 🛠️ Technologies
 **Firmware:** C++, Arduino framework, PlatformIO
 
-**Hardware:** ESP32, WROOM-32, DHT22 sensor
+**Hardware:** ESP32 WROOM-32, DHT22 sensor
 
-**Protocols:** UART, I2C, ADC
+**Protocols:** UART, ADC
 
 **Validation:** Python, pytest, pyserial, jsonschema
 
