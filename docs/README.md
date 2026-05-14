@@ -8,9 +8,13 @@ The project also includes a software-based ESP32 mock simulator used for develop
 
 ## 🛠️ Technologies
 **Firmware:** C++, Arduino framework, PlatformIO
+
 **Hardware:** ESP32, WROOM-32, DHT22 sensor
+
 **Protocols:** UART, I2C, ADC
+
 **Validation:** Python, pytest, pyserial, jsonschema
+
 **Logging:** CSV, JSON
 
 ## ⚙️ Features
@@ -35,6 +39,7 @@ The project also includes a software-based ESP32 mock simulator used for develop
 ![Architecture](docs/architecture.png)
 
 ## 📁 Project Structure
+```
 esp32-sensor-validation/
 |──  src/
 |          |──main.cpp
@@ -55,6 +60,8 @@ esp32-sensor-validation/
 |          |──run_real_validation.py	# Runs full validation on real hardware
 |          |──serial_reader.py	        # Reads real UART data from COM3
 └── platformio.ini		                # PlatformIO board and library configuration
+...
+```
 
 ## 🚀 Installation
 1.	### Clone the repository:
