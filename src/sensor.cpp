@@ -1,7 +1,7 @@
 #include "sensor.h"
 #include <DHT.h>
 
-#define DHT_PIN 21
+#define DHT_PIN 4
 #define DHT_TYPE DHT22
 #define LDR_PIN 34
 
