@@ -2,8 +2,11 @@
 
 ## 📋 Overview
 This project implements an end-to-end embedded sensor validation system for environmental monitoring and firmware testing.
+
 The system is built around an ESP32 microcontroller that reads real-time temperature and humidity data from a DHT22 sensor and transmits the readings over UART in JSON format.
+
 A Python based automated validation framework receives the data, validates, logs the results and generates test reports.
+
 The project also includes a software-based ESP32 mock simulator used for development, debugging, and validation without physical hardware.
 
 ## 🛠️ Technologies
