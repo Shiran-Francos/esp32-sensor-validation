@@ -74,18 +74,25 @@ cd esp32-sensor-validation
 pip install pyserial pytest jsonschema 
 ``` 
 3.	### Flash the firmware:
-a.	Connect ESP32 via Micro USB 
+
+a.	Connect ESP32 via Micro USB
+ 
 b.	Hold BOOT button 
+ 
 c.	Run: 
+ 
 ```bash 
 pio run --target upload 
 ``` 
 d.	Release BOOT when "Connecting..." appears
+
 4.	### Run all tests: 
+
 ```bash 
 cd validation
 pytest tests/ -v
 ```
+
 ## 📊 Test Results
 ```
 platform win32 -- Python 3.8.3, pytest-5.4.3
