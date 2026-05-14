@@ -24,9 +24,6 @@ for i in range (20):
         except json.JSONDecodeError:
             logger.log({}, "FAIL", "CORRUPTED_DATA")
         
-        
-       
-
 reader.close()
 report.generate()
 

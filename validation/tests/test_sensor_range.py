@@ -11,7 +11,7 @@ def test_range():
     humidity=data["humidity"]
     light=data["light"]
 
-    assert 20 <= temp<= 30, "Tempature out of normal range"
+    assert 0 <= temp<= 40, "Tempature out of normal range"
     assert 40 <= humidity <= 70, "Humidity out of normal range"
     assert 100 <= light <= 900, "Light out of normal range"
     

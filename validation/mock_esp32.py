@@ -11,7 +11,7 @@ class MockESP32:
     def generate_normal_reading(self):
         """Generate a valid sensor reading"""
         data = {
-            "temp": round(random.uniform(20.0, 30.0), 2),
+            "temp": round(random.uniform(0.0, 40.0), 2),
             "humidity": round(random.uniform(40.0, 70.0), 2),
             "light": round(random.uniform(100.0, 900.0), 2)
         }
@@ -20,7 +20,7 @@ class MockESP32:
     def generate_out_of_range_reading(self):
         """Generate an out of range sensor reading"""
         data = {
-            "temp": round(random.uniform(90.0, 150.0), 2), 
+            "temp": round(random.uniform(41.0, 150.0), 2), 
             "humidity": round(random.uniform(110.0, 200.0), 2),
             "light": round(random.uniform(100.0, 900.0), 2)
         }

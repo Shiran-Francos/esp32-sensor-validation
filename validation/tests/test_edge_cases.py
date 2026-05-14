@@ -9,8 +9,8 @@ def test_out_of_range():
     data=json.loads (mock_esp.generate_out_of_range_reading())
     temp=data["temp"]
     humidity=data["humidity"]
-    assert temp>150 or temp<90, "Tempature should be out of normal range!"
-    assert humidity<200 or humidity>110, "Humidity should be out of normal range!"
+    assert 41<=temp<=150, "Tempature should be out of normal range!"
+    assert 110<=humidity<=200, "Humidity should be out of normal range!"
 
 def test_error_reding():
 
